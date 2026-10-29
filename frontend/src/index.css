@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #0f1117;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #1a1d27; }
+::-webkit-scrollbar-thumb { background: #2a2d3e; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3d4e; }
+
+/* Recharts overrides */
+.recharts-surface { overflow: visible; }
+.recharts-tooltip-wrapper { outline: none; }
